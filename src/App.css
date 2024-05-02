@@ -1,0 +1,259 @@
+body
+{
+  background-color: black !important;
+}
+
+.btnEP
+{
+  background-color: black !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+  color: white !important;
+}
+
+.btnEP:hover
+{
+  background-color: cornflowerblue !important;
+  border: 1px solid #4b0c38 !important;
+  color: whitesmoke !important;
+}
+
+.epNumber
+{
+  color: white !important;
+  background-color: black !important;
+  border: .5px solid white !important;
+}
+
+.recents
+{
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  color: cornflowerblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: oblique;
+  padding: 10px;
+  background-color: rgb(33,37,41);
+  border-radius: 14px;
+}
+
+.cards:hover
+{
+  cursor: pointer;
+  transform: scale(1.02);
+  box-shadow: 1px cornflowerblue;
+}
+
+.navB
+{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: oblique;
+}
+
+.me-2
+{
+  margin-top: 6px !important;
+}
+
+.list-group-item-dark
+{
+  color: white !important;
+  background-color:rgb(33,37,41) !important;
+}
+
+.footerL
+{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: cornflowerblue;
+}
+
+.contact:hover
+{
+  color: cornflowerblue !important;
+}
+
+.alerta
+{
+  color: cornflowerblue !important;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: oblique;
+  font-size:x-large;
+}
+
+.hrs
+{
+  color: whitesmoke;
+}
+
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(120, 120, 120);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: cornflowerblue;
+
+}
+
+.loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(33,37,41);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.genres
+{
+  
+  text-decoration: none;
+  
+  color: black;
+  background-color:cornflowerblue;
+  padding: 8px;
+  border-radius: 10%;
+  text-align: center;
+  margin: 4px;
+}
+
+.genres:hover
+{
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+}
+
+.lotscontainer {
+  padding: 25px;
+  color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: auto; 
+  margin-top: 80px;
+}
+
+.lotscontainer > p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.player__video.viewer {
+  width: 80%; 
+  max-width: 800px; 
+  height: auto; 
+}
+
+.leftSide {
+  background-color: #f0f0f0;
+}
+
+.rightSide {
+  background-color: #e0e0e0;
+}
+
+@keyframes colorChange {
+  0% {
+      color: red;
+  }
+  50% {
+      color: white;
+  }
+  100% {
+      color: red;
+  }
+}
+
+.lotscontainer > p {
+  font-size: 1.2rem;
+  width: 50%;
+  text-align: center;
+  margin: 20px;
+  animation: colorChange 4s infinite; 
+}
+
+.lotscontainer > p > a{
+  color: cornflowerblue;
+}
+
+/* media querey for sukuna vs mahoraga */
+
+@media only screen and (max-width: 1200px){
+  .lotscontainer{
+    margin-top: 100px;
+    padding: 15px;
+  }
+  
+  .lotscontainer > p {
+    font-size: 1.1rem;
+  }
+
+  .player__video.viewer {
+    width: 70%; 
+    max-width: 800px; 
+    height: auto; 
+  }
+}
+.lotscontainer > h1{
+  text-align: center;
+}
+
+@media only screen and (max-width: 770px){
+  .lotscontainer{
+    padding: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+  
+  }
+
+  .lotscontainer > p{
+    width: 90%;
+  }
+
+  .player__video.viewer {
+    width: 80%; 
+    max-width: 800px; 
+    height: auto; 
+  }
+
+
+}
+
+
+
+#rainBackgroundContainer {
+  position: fixed;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000;
+  pointer-events: none;
+}
+
+.raindrop {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(200, 200, 255, 0.7), rgba(200, 200, 255, 0));
+  animation: rainAnimation linear infinite;
+}
+
+@keyframes rainAnimation {
+  to {
+    transform: translateY(100vh);
+  }
+}
