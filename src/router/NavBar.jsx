@@ -33,7 +33,7 @@ const NavBar = () =>
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/top">Top Airing Animes</Nav.Link>
             <Nav.Link href="/genres">Genres</Nav.Link>
-            <Nav.Link href="/LotsOfInfo">Coming Soon....</Nav.Link>
+            <Nav.Link href="/LotsOfInfo">Anime Recommendations</Nav.Link>
           </Nav>
           <Form onSubmit={find} className="d-flex">
             <Form.Control
